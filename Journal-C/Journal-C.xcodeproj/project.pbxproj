@@ -12,6 +12,8 @@
 		9937E72F230B143900A9A395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9937E72E230B143900A9A395 /* Assets.xcassets */; };
 		9937E732230B143900A9A395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9937E730230B143900A9A395 /* LaunchScreen.storyboard */; };
 		9937E735230B143900A9A395 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937E734230B143900A9A395 /* main.m */; };
+		9937E741230B14E900A9A395 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937E740230B14E900A9A395 /* Entry.m */; };
+		9937E744230B185D00A9A395 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937E743230B185D00A9A395 /* EntryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,10 @@
 		9937E731230B143900A9A395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9937E733230B143900A9A395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9937E734230B143900A9A395 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9937E73F230B14E900A9A395 /* Entry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		9937E740230B14E900A9A395 /* Entry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		9937E742230B185D00A9A395 /* EntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		9937E743230B185D00A9A395 /* EntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,8 @@
 		9937E73C230B145200A9A395 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9937E73F230B14E900A9A395 /* Entry.h */,
+				9937E740230B14E900A9A395 /* Entry.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -87,6 +95,8 @@
 		9937E73D230B145700A9A395 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9937E742230B185D00A9A395 /* EntryController.h */,
+				9937E743230B185D00A9A395 /* EntryController.m */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -168,7 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9937E741230B14E900A9A395 /* Entry.m in Sources */,
 				9937E735230B143900A9A395 /* main.m in Sources */,
+				9937E744230B185D00A9A395 /* EntryController.m in Sources */,
 				9937E727230B143800A9A395 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Journal-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Journal-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,7 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Journal-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Journal-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
